@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackiGo</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Images/logo/logo.png" />
+
+    <!-- Fonts + Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="nav">
+      <a href="#home" class="brand">
+        <img src="./Images/logo/logo.png" alt="TrackiGo" />
+        <span>Tracki<span class="accent">Go</span></span>
+      </a>
+
+      <input id="nav-toggle" type="checkbox" />
+      <label for="nav-toggle" class="burger"
+        ><span></span><span></span><span></span
+      ></label>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Project Scope <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#literature"
+              ><i class="fa-solid fa-book-open"></i> Literature Survey</a
+            >
+            <a href="#gap"
+              ><i class="fa-solid fa-circle-exclamation"></i> Research Gap</a
+            >
+            <a href="#problem"
+              ><i class="fa-solid fa-magnifying-glass"></i> Problem &
+              Solution</a
+            >
+            <a href="#objectives"
+              ><i class="fa-solid fa-bullseye"></i> Objectives</a
+            >
+            <a href="#methodology"
+              ><i class="fa-solid fa-diagram-project"></i> Methodology</a
+            >
+            <a href="#tech"
+              ><i class="fa-solid fa-microchip"></i> Technologies</a
+            >
+          </div>
+        </div>
+        <a href="#milestones">Milestones</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="./videos/bg video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h1>
+          Real-Time Passenger Tracking, Demand Forecasting & Traffic
+          Optimization
+        </h1>
+        <p>
+          A modern AI + IoT platform that brings live visibility, predictive
+          insights, and proactive maintenance to public transport.
+        </p>
+        <a href="#literature" class="btn btn-glow">
+          <span>Explore TrackiGo</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="slant"></div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <!-- Literature Survey -->
+      <section id="literature" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-book-open"></i> Literature Survey
+        </h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Key Findings</h3>
+            <ul class="icon-list">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Hybrid AI (time-series
+                + gradient boosting) outperforms GPS-only ETA and predicts
+                short-term surges reliably.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> On-board IoT telemetry
+                and anomaly detection lower unplanned downtime and improve
+                safety KPIs.
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Equity-aware analytics
+                reveal crowding hotspots and service gaps for underserved
+                regions.
+              </li>
+            </ul>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Approach</th>
+                    <th>Strength</th>
+                    <th>Limitations</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>GPS Only</td>
+                    <td>Location &amp; basic ETA</td>
+                    <td>No surge foresight, reactive</td>
+                  </tr>
+                  <tr>
+                    <td>BI Dashboards</td>
+                    <td>Historical insight</td>
+                    <td>No live control loop</td>
+                  </tr>
+                  <tr>
+                    <td><strong>AI + IoT (TrackiGo)</strong></td>
+                    <td>Forecasting + alerts + actions</td>
+                    <td>Data integration required</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card refs">
+            <h3>References</h3>
+            <ol>
+              <li>
+                Y. Zheng et al., “Urban Computing: Concepts, Methodologies, and
+                Applications,” <em>IEEE TIST</em>, 2014.
+              </li>
+              <li>
+                G. Bhanage, “IoT-enabled Fleet Analytics for Public Transit,”
+                <em>IEEE Access</em>, 2022.
+              </li>
+              <li>
+                A. Ke et al., “Deep Learning for Short-Term Passenger Demand,”
+                <em>IEEE ITS</em>, 2021.
+              </li>
+              <li>
+                M. Mallick et al., “Anomaly Detection for Vehicle Health,”
+                <em>IEEE IoT Journal</em>, 2020.
+              </li>
+              <li>
+                S. D’Acierno et al., “Headway-based Control in Bus Networks,”
+                <em>IEEE ITS</em>, 2019.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Gap -->
+      <section id="gap" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-circle-exclamation"></i> Research Gap
+        </h2>
+        <div class="grid-3">
+          <div class="pill">
+            <i class="fa-solid fa-users-line"></i>
+            <h4>Overcrowding</h4>
+            <p>
+              Tools are reactive; no proactive dispatching against short-term
+              spikes.
+            </p>
+          </div>
+          <div class="pill">
+            <i class="fa-solid fa-route"></i>
+            <h4>Schedule Drift</h4>
+            <p>Limited headway control and route-adherence intelligence.</p>
+          </div>
+          <div class="pill">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4>Reactive Maintenance</h4>
+            <p>
+              Breakdowns handled after failure; no risk scoring or early alerts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem & Solution -->
+      <section id="problem" class="section problem-solution">
+        <h2 class="section-title">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Research Problem &amp; Solution
+        </h2>
+
+        <div class="ps-grid">
+          <!-- Problem -->
+          <article class="card ps-card">
+            <h3>Problem Statement</h3>
+            <p class="lead">
+              Public transport systems face delays, breakdowns, and inefficient
+              scheduling due to fragmented monitoring and outdated static
+              timetables.
+            </p>
+            <p>
+              Crowding, inaccurate ETAs, and reactive maintenance result in poor
+              commuter experiences. Authorities lack a unified, predictive
+              platform that can forecast demand, pre-empt faults, and coordinate
+              service recovery in real time.
+            </p>
+            <ul class="bullets">
+              <li>
+                Disjoint GPS and ticketing systems → no synchronized visibility
+              </li>
+              <li>
+                Static schedules → failure to adapt to real-time traffic demand
+              </li>
+              <li>
+                Reactive maintenance → unplanned downtime and poor reliability
+              </li>
+            </ul>
+          </article>
+
+          <!-- Solution + Demo -->
+          <article class="card ps-card">
+            <h3>Proposed Solution</h3>
+            <ul class="icon-list">
+              <li>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <strong>Live Ops:</strong> real-time route monitoring, occupancy
+                &amp; headway control.
+              </li>
+              <li>
+                <i class="fa-solid fa-chart-line"></i>
+                <strong>Forecasting:</strong> LSTM/ARIMA + XGBoost for
+                short-term demand prediction.
+              </li>
+              <li>
+                <i class="fa-solid fa-microchip"></i>
+                <strong>Predictive Maintenance:</strong> IoT telemetry + anomaly
+                detection models.
+              </li>
+              <li>
+                <i class="fa-solid fa-bell"></i>
+                <strong>Automated Response:</strong> instant alerts with
+                recommended recovery actions.
+              </li>
+              <li>
+                <i class="fa-solid fa-cloud"></i>
+                <strong>Cloud Scale:</strong> containerized microservices
+                deployed on AWS/GCP.
+              </li>
+            </ul>
+
+            <p class="tiny kpi-note">
+              Pilot test results: &lt; 5s location latency • ~86% demand
+              forecast accuracy • up to ~30% reduction in downtime.
+            </p>
+
+            <!-- Local demo video -->
+            <div class="demo-wrap">
+              <div class="ratio">
+                <video
+                  controls
+                  preload="metadata"
+                  poster="./Images/cover-demo.jpg"
+                >
+                  <source
+                    src="./videos/Research Project Demo.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Objectives -->
+      <section id="objectives" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-bullseye"></i> Research Objectives
+        </h2>
+
+        <div class="objectives-grid">
+          <!-- Left: Objective text -->
+          <div class="objectives-text">
+            <div class="timeline">
+              <div class="node">
+                <span class="dot">🗺️</span>
+                <div>
+                  <h4>Realtime Fleet & Occupancy</h4>
+                  <p>
+                    Live tracking, headway monitoring, and crowding hotspots for
+                    dispatch decisions.
+                  </p>
+                </div>
+              </div>
+              <div class="node">
+                <span class="dot">📈</span>
+                <div>
+                  <h4>Demand Forecasting</h4>
+                  <p>
+                    Predict surges by stop/route/time using hybrid time-series +
+                    tabular models.
+                  </p>
+                </div>
+              </div>
+              <div class="node">
+                <span class="dot">🛠️</span>
+                <div>
+                  <h4>Predictive Maintenance</h4>
+                  <p>
+                    Detect emerging faults early via IoT telemetry & anomaly
+                    detection.
+                  </p>
+                </div>
+              </div>
+              <div class="node">
+                <span class="dot">⚖️</span>
+                <div>
+                  <h4>Decision Support & Equity</h4>
+                  <p>
+                    Alerting, recommended actions, KPI dashboards, and fairness
+                    monitoring.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Illustration -->
+          <div class="objectives-illustration">
+            <img
+              src="./Images/other/A.jpg"
+              alt="Research Objectives Illustration"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Methodology -->
+      <section id="methodology" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-diagram-project"></i> Methodology
+        </h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <ol class="steps">
+              <li>
+                <strong>Data Acquisition:</strong> GPS, ticketing/occupancy, IoT
+                health, traffic & weather.
+              </li>
+              <li>
+                <strong>Feature Engineering:</strong> headway, dwell, surge
+                indices, telemetry anomalies.
+              </li>
+              <li>
+                <strong>Models:</strong> LSTM/ARIMA + XGBoost; anomaly detection
+                for maintenance.
+              </li>
+              <li>
+                <strong>Privacy & Security:</strong> encryption, RBAC, audit
+                trails.
+              </li>
+              <li>
+                <strong>Visualization:</strong> React dashboard with KPIs, maps
+                & heatmaps.
+              </li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h3 class="mb8">High-Level System Diagram</h3>
+            <img
+              class="diagram"
+              src="./Images/other/highlevel.png"
+              alt="High Level Architecture Diagram"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies -->
+      <section id="tech" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-microchip"></i> Technologies Used
+        </h2>
+
+        <div class="tech-badges">
+          <span><i class="fa-brands fa-python"></i> Python</span>
+          <span><i class="fa-solid fa-brain"></i> TensorFlow</span>
+          <span><i class="fa-solid fa-chart-line"></i> XGBoost</span>
+          <span><i class="fa-solid fa-database"></i> MongoDB</span>
+          <span><i class="fa-brands fa-aws"></i> AWS</span>
+          <span><i class="fa-brands fa-docker"></i> Docker</span>
+          <span><i class="fa-brands fa-react"></i> React</span>
+          <span><i class="fa-solid fa-signal"></i> WebSockets</span>
+          <span><i class="fa-solid fa-shield-halved"></i> RBAC + JWT</span>
+        </div>
+      </section>
+
+      <!-- Milestones -->
+      <section id="milestones" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-flag-checkered"></i> Project Milestones
+        </h2>
+
+        <div class="timeline-wrap">
+          <!-- Proposal Presentation -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Proposal Presentation
+                <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                A Project Proposal is presented to potential sponsors or clients
+                to receive funding or get your project approved.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> January 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 6%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proposal Document -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-file-lines"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Proposal Document
+                <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                A Project Proposal document is submitted to the supervisor for
+                the approval of the project.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> February 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 6%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress 1 -->
+          <div class="milestone">
+            <div class="icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="milestone-content">
+              <h3>
+                Progress Presentation I
+                <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Reviews 50% completion of the project, identifying design or
+                requirement gaps.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> April 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 15%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Paper -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-newspaper"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Research Paper <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Describes the project’s contribution to existing knowledge and
+                literature review.
+              </p>
+              <div class="meta">
+                <span><i class="fa-solid fa-calendar-days"></i> June 2025</span>
+                <span><i class="fa-solid fa-percent"></i> 16%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final Report -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Final Report & Group Report
+                <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Evaluates the completed project including individual, group, and
+                final reports.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> August 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 19%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress 2 -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Progress Presentation II
+                <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Demonstrates 90% completion, along with poster presentation and
+                analysis.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> September
+                  2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 18%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final Viva -->
+          <div class="milestone">
+            <div class="icon">
+              <i class="fa-solid fa-person-chalkboard"></i>
+            </div>
+            <div class="milestone-content">
+              <h3>
+                Final Presentation & Viva
+                <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Individual viva to assess each member’s contribution to the
+                research project.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> October 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 20%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Website -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Website Assessment
+                <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Website promotes the research project and reveals all related
+                project details.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> November 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 2%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checklist -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Checklist <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Includes commercialization plan, PM tool report, UAT, and
+                business canvas.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> November 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 2%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Log Book -->
+          <div class="milestone">
+            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            <div class="milestone-content">
+              <h3>
+                Log Book <span class="status completed">✔ Completed</span>
+              </h3>
+              <p>
+                Validates project progress with supervisor comments and status
+                documents.
+              </p>
+              <div class="meta">
+                <span
+                  ><i class="fa-solid fa-calendar-days"></i> October 2025</span
+                >
+                <span><i class="fa-solid fa-percent"></i> 2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Downloads (cards) -->
+      <section id="downloads" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-download"></i> Downloads
+        </h2>
+        <div class="grid-4">
+          <div class="dcard">
+            <i class="fa-regular fa-file-pdf"></i>
+            <h4>TAF</h4>
+            <p class="muted">Submitted on 2025-11-04</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/1d3Szp-X5CAgU1sSiEeQLAxc6MhVastuN"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div class="dcard">
+            <i class="fa-regular fa-file-powerpoint"></i>
+            <h4>Project Proposal</h4>
+            <p class="muted">Submitted on 2025-02-04</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/1_D9RBr0dVKlr8FWw9X-1IPIUtLygqDBt"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div class="dcard">
+            <i class="fa-regular fa-file-powerpoint"></i>
+            <h4>Research Paper</h4>
+            <p class="muted">Submitted on 2025-10-11</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/1RvKgAlpA-_iaFVMbZDn76IOGVUEEdH9H"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div class="dcard">
+            <i class="fa-regular fa-file-powerpoint"></i>
+            <h4>Final Report</h4>
+            <p class="muted">Submitted on 2025-10-15</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/1JHOCPH7zfIY97YKX4d1St08hy_2yu-py"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div class="dcard">
+            <i class="fa-regular fa-file-powerpoint"></i>
+            <h4>Proposal Presentation</h4>
+            <p class="muted">Submitted on 2025-10-15</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/17_XWK1lGBDhli7dgoEiHVHhS9tY6WOWM"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div class="dcard">
+            <i class="fa-regular fa-file-powerpoint"></i>
+            <h4>Progress Presentation I</h4>
+            <p class="muted">Submitted on 2025-10-15</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/1et5QDCD9bClmaaJV8iSLZe9qqXXu6Wns"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div class="dcard">
+            <i class="fa-regular fa-file-powerpoint"></i>
+            <h4>Progress Presentation II</h4>
+            <p class="muted">Submitted on 2025-10-15</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/1KJWhgxq3YK92RLIIEwHNZXbrjVwxWedx"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+          <div class="dcard">
+            <i class="fa-regular fa-file-powerpoint"></i>
+            <h4>Final Presentation</h4>
+            <p class="muted">Submitted on 2025-10-15</p>
+            <a
+              class="btn btn-outline"
+              href="https://drive.google.com/drive/u/0/folders/1eOKsFb1x2wHe6UFn-plqwACxfeU9Ib54"
+              target="_blank"
+              >Download</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section id="team" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-users"></i> Research Supervisors
+        </h2>
+        <div class="grid-2 mb32">
+          <div class="person">
+            <img src="./Images/dp/supervisor.jpeg" alt="Supervisor" />
+            <h4>Ms. Buddima Aththanayaka</h4>
+            <h5>Lecturer</h5>
+            <span class="tag">Supervisor</span>
+            <p>Department of Computer Systems Engineering, SLIIT</p>
+            <div class="plink">
+              <a href="mailto:buddhima.a@sliit.lk"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="person">
+            <img src="./Images/dp/cosupervisor.jpg" alt="Co-supervisor" />
+            <h4>Ms. Vihara Peris</h4>
+            <h5>Instructor</h5>
+            <span class="tag">Co-Supervisor</span>
+            <p>Department of Computer Systems Engineering, SLIIT</p>
+            <div class="plink">
+              <a href="mailto:example@sliit.lk"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title">
+          <i class="fa-solid fa-user-group"></i> Research Team
+        </h2>
+        <div class="grid-4">
+          <div class="person">
+            <img src="./Images/dp/thenura.jpg" alt="Researcher" />
+            <h4>Thenura Nemhan</h4>
+            <span class="tag">Team Leader</span>
+            <p>B.Sc (Hons) IT - Information Systems Engineering</p>
+            <div class="plink">
+              <a href="mailto:it21810114@my.sliit.lk"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/thenura-nemhan-084750160/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="person">
+            <img src="./Images/dp/hansi.jpg" alt="Researcher" />
+            <h4>Hansani Bandara</h4>
+            <span class="tag">Member 1</span>
+            <p>B.Sc (Hons) IT - Information Systems Engineering</p>
+            <div class="plink">
+              <a href="mailto:it21801686@my.sliit.lk"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/hansanibandara/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="person">
+            <img src="./Images/dp/dinuka.jpg" alt="Researcher" />
+            <h4>Dinuka Fernando</h4>
+            <span class="tag">Member 2</span>
+            <p>B.Sc (Hons) IT - Information Systems Engineering</p>
+            <div class="plink">
+              <a href="mailto:it21801518@my.sliit.lk"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/dinuka-fernando-100840213/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="person">
+            <img src="./Images/dp/kelum.jpg" alt="Researcher" />
+            <h4>Kelum Senanayake</h4>
+            <span class="tag">Member 3</span>
+            <p>B.Sc (Hons) IT - Information Systems Engineering</p>
+            <div class="plink">
+              <a href="mailto:it21803048@my.sliit.lk"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/kelums/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-envelope"></i> Contact Us
+        </h2>
+        <div class="grid-2">
+          <!-- Modern Form -->
+          <form id="contactForm" class="glass form">
+            <div class="fgroup">
+              <input id="name" type="text" required />
+              <label for="name">Your Name</label>
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="fgroup">
+              <input id="email" type="email" required />
+              <label for="email">Email Address</label>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="fgroup">
+              <textarea id="message" rows="5" required></textarea>
+              <label for="message">Your Message</label>
+              <i class="fa-regular fa-comment"></i>
+            </div>
+            <button class="btn btn-glow full" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p id="formStatus" class="status"></p>
+          </form>
+
+          <!-- Info + Map -->
+          <div class="card contact-card">
+            <h3>Contact Information</h3>
+            <div class="citem">
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:thenura123nemhan@gmail.com">trackigo@gmail.com</a>
+            </div>
+            <div class="citem">
+              <i class="fa-solid fa-location-dot"></i> Sri Lanka Institute of
+              Information Technology, Sri Lanka
+            </div>
+
+            <div class="map-wrap">
+              <iframe
+                title="SLIIT Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.316361513648!2d79.9729445!3d6.9146775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db1a6771c5%3A0x2c63e344ab9a7536!2sSri%20Lanka%20Institute%20of%20Information%20Technology!5e1!3m2!1sen!2slk!4v1761592391560!5m2!1sen!2slk"
+                width="100%"
+                height="260"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="fcol">
+          <div class="fbrand">
+            <img
+              src="./Images/logo/logo.png"
+              alt="TrackiGo Logo"
+              class="footer-logo"
+            />
+            <h3 class="footer-title">Tracki<span class="accent">Go</span></h3>
+          </div>
+          <p class="muted">
+            AI-Powered transport intelligence for reliable, equitable public
+            mobility.
+          </p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="fcol">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#problem">Research Problem</a>
+          <a href="#methodology">Methodology</a>
+          <a href="#milestones">Milestones</a>
+        </div>
+
+        <div class="fcol">
+          <h4>Research Team</h4>
+          <span>Thenura Nemhan</span>
+          <span>Hansani Bandara</span>
+          <span>Dinuka Fernando</span>
+          <span>Kelum Senanayake</span>
+        </div>
+
+        <div class="fcol">
+          <h4>Contact</h4>
+          <span><i class="fa-solid fa-location-dot"></i> SLIIT, Malabe</span>
+          <span><i class="fa-solid fa-phone-volume"></i> 077 066 3372</span>
+          <span><i class="fa-regular fa-envelope"></i> trackigo@gmail.com</span>
+        </div>
+      </div>
+      <div class="footbar">
+        <div class="container">
+          © 2025 TrackiGo Research Project • Developed by SLIIT Research Team
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Form micro-UX
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const status = document.getElementById("formStatus");
+          status.textContent = "Thanks! We will get back to you shortly.";
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
